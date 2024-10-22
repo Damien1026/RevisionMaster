@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textSize="16sp"
+        android:textColor="#CCCCCC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/subtitles_container"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <!-- Subtitles (hidden by default) -->
+    <LinearLayout
+        android:id="@+id/subtitles_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/subtitle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Subtitle 1"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/subtitle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Subtitle 2"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/subtitle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Subtitle 3"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+
+    <!-- Add more subtitles as needed -->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RevisionMaster</string>
+    <string name="title_home">Stared</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
