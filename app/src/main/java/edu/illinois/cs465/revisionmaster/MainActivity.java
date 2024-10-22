@@ -2,6 +2,8 @@ package edu.illinois.cs465.revisionmaster;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,13 +22,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //hide status bar for full screen experience
+        //View decoView = getWindow().getDecorView();
+        //decoView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+
         // Initialize RecyclerView
         recyclerViewCompanies = findViewById(R.id.recyclerView_companies);
         recyclerViewCompanies.setLayoutManager(new LinearLayoutManager(this));
 
         // Sample data
         List<String> companies = Arrays.asList(
-                "Google", "Amazon", "NVIDIA", "Meta", "PayPal", "Goldman Sachs", "Jane Street", "Ebay"
+                "Google", "Amazon", "NVIDIA", "Meta", "PayPal", "Goldman Sachs", "Jane Street", "Ebay",
+                "Salesforce", "Riot", "Expedia", "Dropbox", "Doordash", "Bloomberg", "Tiktok"
         );
 
         // Set the adapter with data

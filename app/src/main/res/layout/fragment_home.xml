@@ -41,14 +41,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_companies"
-        android:layout_width="340dp"
-        android:layout_height="597dp"
+        android:layout_width="325dp"
+        android:layout_height="605dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/companies_label"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/companies_label"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!-- Add other company items in a similar way -->
 
